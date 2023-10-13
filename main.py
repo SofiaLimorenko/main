@@ -3,7 +3,7 @@ import requests
 app = FastAPI()
 @app.get('/get_data')
 async def get_data():
-    source_url ='https://github.com/SofiaLimorenko/main'
+    source_url ='https://github.com/SofiaLimorenko/api'
     response = requests.get(source_url)
     if response.status_code == 200:
         data = response.json()
